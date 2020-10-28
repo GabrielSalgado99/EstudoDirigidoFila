@@ -26,7 +26,7 @@ public class FilaInteirosInfinita {
 	}
 
 	public Object remover() throws FilaVaziaException {
-		if (vetor[0] == 0) {
+		if (estaVazia()) {
 			throw new FilaVaziaException();
 		} else {
 			int retorno = vetor[0];

@@ -16,7 +16,7 @@ public class Fila implements IFila {
 
 	@Override
 	public Object remover() throws FilaVaziaException {
-		if (vetor[0] == null) {
+		if (estaVazia()) {
 			throw new FilaVaziaException();
 		} else {
 			Object retorno = vetor[0];
